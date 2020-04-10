@@ -1,0 +1,44 @@
+[
+  {
+    "id": 0,
+    "title": "Burger App",
+    "github": "https://github.com/tluben/Handlebars",
+    "deployed": "https://afternoon-sands-78319.herokuapp.com/burgers",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/RedDot_Burger.jpg/1200px-RedDot_Burger.jpg"
+  },
+  {
+    "id": 1,
+    "title": "Fitness Tracker",
+    "github": "https://github.com/tluben/fitnessTracker",
+    "deployed": "https://arcane-dawn-65273.herokuapp.com/",
+    "img": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F-sdljkLeVPWA%2FUCnMhFmGDgI%2FAAAAAAAAAXU%2Fpm2PFvTFwUM%2Fs1600%2Fleg-exercises-tb-single-leg-bridge-1.jpg&f=1&nofb=1"
+  },
+  {
+    "id": 2,
+    "title": "Budget Tracker",
+    "github": "https://github.com/tluben/Handlebars",
+    "deployed": "https://bttlube.herokuapp.com/",
+    "img": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.24.co.za%2Ffiles%2FCms%2FGeneral%2Fd%2F824%2Fe50eddd1becc4a40ad4db42a8d67add4.jpg&f=1&nofb=1"
+  },
+  {
+    "id": 3,
+    "title": "Code Quiz",
+    "github": "https://github.com/tluben/codequiz",
+    "deployed": "https://tluben.github.io/codequiz/",
+    "img": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsites.create-cdn.net%2Fsiteimages%2F28%2F9%2F3%2F289382%2F9623386.jpg%3F1423514318&f=1&nofb=1"
+  },
+  {
+    "id": 4,
+    "title": "Handy",
+    "github": "https://github.com/raynawilliams1993/Handy",
+    "deployed": "",
+    "img": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbiz.prlog.org%2FContractorsBuilders%2Flogo.jpg&f=1&nofb=1"
+  },
+  {
+    "id": 5,
+    "title": "Note Taker",
+    "github": "https://github.com/tluben/notetaketed",
+    "deployed": "https://salty-castle-51234.herokuapp.com/",
+    "img": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fproduct-images.www8-hp.com%2Fdigmedialib%2Fprodimg%2Flowres%2Fc05633255.png&f=1&nofb=1"
+  }
+]
