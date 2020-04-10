@@ -1,14 +1,20 @@
 import React from "react";
 import Card from "../Card";
 
-function Portfolio({projects}) {
+const Portfolio = (props) => {
+//TEDDY TODO review the props change
+// function Portfolio({ , projects}) {
   return (
     <div className="container className-centered">
       <h1 className="text-center">Teddy's Portfolio</h1>
       <div className ="row">
-        {projects.map(project =>(
+        {/* TEDDY TODO review the props change to all lines below */}
+        {props.isListView(true)}
+        The value is {props.TeddyToDo1Value}
+        {props.projects.map(project =>(
           <Card project={project}/>
         ))}
+        {/* GREG TODO<button onClick={props.firstStateUpdateForTeddy}>Teddy TODO click me to change state!!!</button> */}
 
       </div>
     </div>
