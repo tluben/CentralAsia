@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react";  
 
-function About() {
+const About = (props) => {
   return (
     <div className="container">
       <h1>About</h1>
@@ -10,6 +10,7 @@ function About() {
       <a href ="https://github.com/tluben/">github</a> 
       <br></br>
       <a href ="https://github.com/tluben/">linkedin</a>
+      <p> hello {props.TeddyToDo2Value}</p>
 
     </div>
   );

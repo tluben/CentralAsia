@@ -7,6 +7,8 @@ import Blog from "./components/pages/Blog";
 import Contact from "./components/pages/Contact";
 import Portfolio from "./components/pages/Portfolio";
 import projects from "./data/portfolio.json"
+import AnimalPage from "./components/pages/AnimalPage";
+
 
 class App extends React.Component {
 state = {
@@ -75,6 +77,7 @@ isListView(listView){
       <Router>
         <div>
           <NavTabs />
+          <Route exact path="/animalpage" component={AnimalPage} />
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} TeddyToDo1Value={this.state.TeddyToDo1Value}/>
 
