@@ -14,7 +14,7 @@ const Portfolio = (props) => {
         {props.projects.map(project =>(
           <Card project={project}/>
         ))}
-        {/* GREG TODO<button onClick={props.firstStateUpdateForTeddy}>Teddy TODO click me to change state!!!</button> */}
+        <button onClick={() => props.firstStateUpdateForTeddy()}>Teddy TODO click me to change state!!!</button>
 
       </div>
     </div>
