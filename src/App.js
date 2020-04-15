@@ -41,11 +41,13 @@ isListView(listView){
   console.log("its not working")
   return false
 }
-
-// GREG TODO 
-// firstStateUpdateForTeddy(){
-//   this.setState({TeddyToDo1Value: 2})
-// }
+//This line works
+firstStateUpdateForTeddy = () => {
+  //this line doesnt
+//firstStateUpdateForTeddy(){
+  console.log("State function")
+  this.setState({TeddyToDo1Value: 2})
+}
 
 // TEDDY TODO uncomment the below 3 functions and use them to display information on the subsequent screens
 
