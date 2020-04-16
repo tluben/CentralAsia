@@ -79,7 +79,9 @@ isListView(listView){
           <NavTabs />
           <Route exact path="/animalpage" component={AnimalPage} />
           <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} TeddyToDo1Value={this.state.TeddyToDo1Value}/>
+          <Route exact path="/about" component={()=> <About 
+            TeddyToDo2Value={this.state.TeddyToDo2Value}
+            />}/>
 
           {/* TEDDY TODO review this and then delete this whole line TeddyToDo1Value={this.state.TeddyToDo1Value} projects={this.state.projects} listView={this.state.listView} isListView={this.isListView()}*/}
           <Route exact path="/portfolio" component={()=><Portfolio
