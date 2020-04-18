@@ -11,6 +11,7 @@ const About = (props) => {
       <br></br>
       <a href ="https://github.com/tluben/">linkedin</a>
       <p> hello {props.TeddyToDo2Value}</p>
+      <p>{props.TeddyToDo3Value.lname}</p>
 
     </div>
   );

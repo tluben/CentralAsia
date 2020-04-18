@@ -20,11 +20,12 @@ state = {
   //TEDDY TODO further expand state with more/ better data. If you implement correctly, edit state to whatever you want. success here is passing and using the values in one or more component
   TeddyToDo2Value: 2,
   TeddyToDo3Value: {
-    name: "Teddy name to do",
+    lname: "Teddy name to do",
+    sports:["mma","tennis"],
     teddlyList: [
       {
         "TeddyToDo1Value" :  1,
-        "TeddyToDo2Value" : 2
+        "TeddyToDo2Value" : 2     
       },
       false,
       5
@@ -81,6 +82,7 @@ isListView(listView){
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={()=> <About 
             TeddyToDo2Value={this.state.TeddyToDo2Value}
+            TeddyToDo3Value={this.state.TeddyToDo3Value}
             />}/>
 
           {/* TEDDY TODO review this and then delete this whole line TeddyToDo1Value={this.state.TeddyToDo1Value} projects={this.state.projects} listView={this.state.listView} isListView={this.isListView()}*/}
