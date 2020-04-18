@@ -8,10 +8,16 @@ import Contact from "./components/pages/Contact";
 import Portfolio from "./components/pages/Portfolio";
 import projects from "./data/portfolio.json"
 import AnimalPage from "./components/pages/AnimalPage";
+import HuntType from "./components/pages/HuntType";
 
 
 class App extends React.Component {
 state = {
+  Hunts: {
+    ibex:["ibex","aa"],
+    argali:["argali","bb"],
+    redStag:["stag","ccc"]
+  },
   projects: projects,
   listView: false,
   //TEDDY TODO review the state change
@@ -94,6 +100,9 @@ isListView(listView){
             isListView={this.isListView}
           />}/>
           <Route path="/contact" component={Contact} />
+          <Route exact path="/hunttype" component={() =><HuntType
+            Hunts={this.state.Hunts.argali}
+          />}/>
         </div>
       </Router>
     );
