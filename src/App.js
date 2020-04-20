@@ -8,7 +8,8 @@ import Contact from "./components/pages/Contact";
 import Portfolio from "./components/pages/Portfolio";
 import projects from "./data/portfolio.json"
 import AnimalPage from "./components/pages/AnimalPage";
-import HuntType from "./components/pages/HuntType";
+import HuntCard from "./components/pages/HuntCard";
+import HuntPage from "./components/pages/HuntPage"
 
 
 class App extends React.Component {
@@ -102,8 +103,8 @@ firstStateUpdateForTeddy = () => {
             isListView={this.isListView}
           />}/>
           <Route path="/contact" component={Contact} />
-          <Route exact path="/hunttype" component={() =><HuntType
-            Hunts={this.state.Hunts.argali}
+          <Route path="/hunttype" component={() =><HuntPage
+            Hunts={this.state.Hunts.argali[1]}
           />}/>
         </div>
       </Router>
