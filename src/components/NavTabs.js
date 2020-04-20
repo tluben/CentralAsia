@@ -33,6 +33,14 @@ function NavTabs() {
           Portfolio
         </Link>
       </li>
+      <li className="nav-item">
+        <Link
+          to="/hunttype"
+          className={location.pathname === "/hunttype" ? "nav-link active" : "nav-link"}
+        >
+          Hunt Types
+        </Link>
+      </li>
     </ul>
   );
 }
