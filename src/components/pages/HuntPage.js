@@ -5,8 +5,8 @@ import HuntCard from "./HuntCard";
  const HuntPage = (props) => {
     return(
         <div className="container">
-            <HuntCard />
-            <HuntCard />        
+            <HuntCard Hunts={props.animals}/>
+            <HuntCard Hunts={props.Hunts}/>        
         </div>
     )
 }
