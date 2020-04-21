@@ -19,6 +19,7 @@ state = {
     argali:["argali","bb"],
     redStag:["stag","ccc"]
   },
+  Animals: ["ibex","stag","deer"],
   projects: projects,
   listView: false,
   //TEDDY TODO review the state change
