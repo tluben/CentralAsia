@@ -6,7 +6,9 @@ const HuntCard = (props) => {
         <div className="container">
             <div className="card">
                 <div className="card-body">
-                    <h2>{props.Hunts}</h2>
+                    <h2>{props.Hunts.animalName}</h2>
+                    <p>{props.Hunts.description}</p>
+                    <img src={props.Hunts.img} alt="ibex"></img>
                 </div>
             </div>
 
