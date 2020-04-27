@@ -10,6 +10,7 @@ import projects from "./data/portfolio.json"
 import AnimalPage from "./components/pages/AnimalPage";
 import HuntCard from "./components/pages/HuntCard";
 import HuntPage from "./components/pages/HuntPage"
+import IndividualHunt from "./components/pages/IndividualHunts";
 
 
 class App extends React.Component {
@@ -22,20 +23,34 @@ state = {
   Hunts: [
     {
       animalName: "ibex",
-      description: "hello world",
-      img: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.worldsportfishing.com%2Fwp-content%2Fuploads%2F2012%2F02%2Fibex.jpg&f=1&nofb=1"
-    },
-    {
-      animalName: "stag",
-      description: "hello world 2",
-      img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthepayereyes.com%2Fstore%2Fwp-content%2Fuploads%2F2019%2F01%2Fredstag.jpg&f=1&nofb=1"
-    },
-    {
-      animalName: "argali",
-      description: "hello world 3",
-      img: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fsasscer.files.wordpress.com%2F2014%2F05%2Fargali_sheep.jpg&f=1&nofb=1"
-    },
+      location:"Mongolia",
+      huntingSeasons: {
+        one:"october-november",
+        two:"Feb-april",
+      },
+      duration: "12-14 days with 9 days hunting",
+      included:["visa support","firearms permits","airport pick-up"],
+      trophyQuality:{
+        Argali:"23-44 inches",
+        hangaiArgali:"34-40 inches",
+        gobiArgali:"34234234"
+      },
+      gallery:{
+        img1: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.worldsportfishing.com%2Fwp-content%2Fuploads%2F2012%2F02%2Fibex.jpg&f=1&nofb=1",
+        img2: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.worldsportfishing.com%2Fwp-content%2Fuploads%2F2012%2F02%2Fibex.jpg&f=1&nofb=1",
+        img3:  "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.worldsportfishing.com%2Fwp-content%2Fuploads%2F2012%2F02%2Fibex.jpg&f=1&nofb=1"
+      },  
+    }
   ],
+    //   description: "hello world 2",
+    //   img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthepayereyes.com%2Fstore%2Fwp-content%2Fuploads%2F2019%2F01%2Fredstag.jpg&f=1&nofb=1"
+    // }
+    // ,{
+    //   animalName: "argali",
+    //   description: "hello world 3",
+    //   img: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fsasscer.files.wordpress.com%2F2014%2F05%2Fargali_sheep.jpg&f=1&nofb=1"
+    // }
+    
   animals: ["ibex","stag","deer"],
 
   projects: projects,
@@ -120,6 +135,9 @@ firstStateUpdateForTeddy = () => {
             projects={this.state.projects}
             listView={this.state.listView}
             isListView={this.isListView}
+          />}/>
+          <Route path="/individualhunt" component={() =><IndividualHunt
+            Hunts={this.state.Hunts}
           />}/>
           <Route path="/contact" component={Contact} />
           <Route path="/hunttype" component={() =><HuntPage
