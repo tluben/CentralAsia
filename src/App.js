@@ -14,12 +14,30 @@ import HuntPage from "./components/pages/HuntPage"
 
 class App extends React.Component {
 state = {
-  Hunts: {
-    ibex:["ibex","aa"],
-    argali:["argali","bb"],
-    redStag:["stag","ccc"]
-  },
+  // Hunts: {
+  //   ibex:["ibex","aa"],
+  //   argali:["argali","bb"],
+  //   redStag:["stag","ccc"]
+  // },
+  Hunts: [
+    {
+      animalName: "ibex",
+      description: "hello world",
+      img: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.worldsportfishing.com%2Fwp-content%2Fuploads%2F2012%2F02%2Fibex.jpg&f=1&nofb=1"
+    },
+    {
+      animalName: "stag",
+      description: "hello world 2",
+      img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthepayereyes.com%2Fstore%2Fwp-content%2Fuploads%2F2019%2F01%2Fredstag.jpg&f=1&nofb=1"
+    },
+    {
+      animalName: "argali",
+      description: "hello world 3",
+      img: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fsasscer.files.wordpress.com%2F2014%2F05%2Fargali_sheep.jpg&f=1&nofb=1"
+    },
+  ],
   animals: ["ibex","stag","deer"],
+
   projects: projects,
   listView: false,
   //TEDDY TODO review the state change
