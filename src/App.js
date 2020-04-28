@@ -11,15 +11,23 @@ import AnimalPage from "./components/pages/AnimalPage";
 import HuntCard from "./components/pages/HuntCard";
 import HuntPage from "./components/pages/HuntPage"
 import IndividualHunt from "./components/pages/IndividualHunts";
+import Gallery from "./components/pages/Gallery"
 
 
 class App extends React.Component {
 state = {
-  // Hunts: {
-  //   ibex:["ibex","aa"],
-  //   argali:["argali","bb"],
-  //   redStag:["stag","ccc"]
-  // },
+  gallery:[
+    {
+      name: "dafsdfasdf",
+      img1: "asdfasdf",
+      img2: "adsasdfas"  
+    },
+    {
+      name: "zdfgs",
+      img1: "dfgsdfg",
+      img2: "343434"  
+    }
+  ],
   Hunts:[
   //   {
   //     animalName: "ibex",
@@ -63,16 +71,7 @@ state = {
   TeddyToDo2Value: 2,
   TeddyToDo3Value: {
     lname: "Teddy name to do",
-    sports:["mma","tennis"],
-    teddlyList: [
-      {
-        "TeddyToDo1Value" :  1,
-        "TeddyToDo2Value" : 2     
-      },
-      false,
-      5
-    ],
-    teddyMoney: 100
+    sports:["mma","tennis"]
   } 
 }
 
@@ -136,6 +135,11 @@ isListView(listView){
             isListView={this.isListView}
           />}/>
           <Route path="/individualhunt" component={() =><IndividualHunt
+            Hunts={this.state.Hunts}
+          />}/>
+          <Route path="/gallery" component={() =><Gallery
+            gallery={this.state.gallery}
+            img1={this.state.gallery.img1}
             Hunts={this.state.Hunts}
           />}/>
           <Route path="/contact" component={Contact} />
