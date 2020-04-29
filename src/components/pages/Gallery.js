@@ -1,12 +1,15 @@
 import React from "react";
+import Img from "./Img";
+
 
 const Gallery = (props) => {
     return(
             <div className="container">
-            {/* GREG TODO - idk why I can't get state to pass into this component*/}
                 <h2>{props.gallery[0].name}</h2>
                 <h1>{props.Hunts[0].trophyQuality.Argali}</h1>
-            {/* Greg todo - end */}
+                {props.gallery.map(gallery =>(
+                    <Img gallery={gallery}/>
+                ))}
             </div>
     )
 }

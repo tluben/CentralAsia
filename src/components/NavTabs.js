@@ -35,6 +35,14 @@ function NavTabs() {
       </li>
       <li className="nav-item">
         <Link
+          to="/gallery"
+          className={location.pathname === "/gallery" ? "nav-link active" : "nav-link"}
+        >
+          Gallery
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
           to="/hunttype"
           className={location.pathname === "/hunttype" ? "nav-link active" : "nav-link"}
         >

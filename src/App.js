@@ -18,12 +18,15 @@ class App extends React.Component {
 state = {
   gallery:[
     {
-      name: "dafsdfasdf",
-      img1: "asdfasdf",
-      img2: "adsasdfas"  
+      tripName: "dafsdfasdf",
+      img:[
+        "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.worldsportfishing.com%2Fwp-content%2Fuploads%2F2012%2F02%2Fibex.jpg&f=1&nofb=1",
+        "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.worldsportfishing.com%2Fwp-content%2Fuploads%2F2012%2F02%2Fibex.jpg&f=1&nofb=1",
+        "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.worldsportfishing.com%2Fwp-content%2Fuploads%2F2012%2F02%2Fibex.jpg&f=1&nofb=1"
+      ]
     },
     {
-      name: "zdfgs",
+      tripName: "zdfgs",
       img1: "dfgsdfg",
       img2: "343434"  
     }
