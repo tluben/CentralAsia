@@ -18,7 +18,7 @@ class App extends React.Component {
 state = {
   gallery:[
     {
-      tripName: "dafsdfasdf",
+      tripName: ["dafsdfasdf"],
       img:[
         "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.worldsportfishing.com%2Fwp-content%2Fuploads%2F2012%2F02%2Fibex.jpg&f=1&nofb=1",
         "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.worldsportfishing.com%2Fwp-content%2Fuploads%2F2012%2F02%2Fibex.jpg&f=1&nofb=1",
@@ -26,14 +26,18 @@ state = {
       ]
     },
     {
-      tripName: "zdfgs",
+      tripName: ["zdfgs"],
       img:[
         "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.worldsportfishing.com%2Fwp-content%2Fuploads%2F2012%2F02%2Fibex.jpg&f=1&nofb=1",
         "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.worldsportfishing.com%2Fwp-content%2Fuploads%2F2012%2F02%2Fibex.jpg&f=1&nofb=1",
         "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.worldsportfishing.com%2Fwp-content%2Fuploads%2F2012%2F02%2Fibex.jpg&f=1&nofb=1"
       ]
-     
     }
+  ],
+  gal:[
+        "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.worldsportfishing.com%2Fwp-content%2Fuploads%2F2012%2F02%2Fibex.jpg&f=1&nofb=1",
+        "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.worldsportfishing.com%2Fwp-content%2Fuploads%2F2012%2F02%2Fibex.jpg&f=1&nofb=1",
+        "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.worldsportfishing.com%2Fwp-content%2Fuploads%2F2012%2F02%2Fibex.jpg&f=1&nofb=1"
   ],
   Hunts:[
     {
