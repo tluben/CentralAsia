@@ -5,30 +5,46 @@ import Img from "./Img";
 const Gallery = (props) => {
     return(
             <div className="container">
-                <h2>{props.gallery[0].name}</h2>
-                <h1>{props.Hunts[0].trophyQuality.Argali}</h1>
+                <h2>{props.gallery[0].tripName[0]}</h2>
+                {/* <h1>{props.Hunts.trophyQuality.Argali}</h1> */}
                 {/* {props.gallery.map(gallery =>(
                     <Img gallery={gallery}/>
                 ))} */}
-                {props.gallery.map(gallery => {
+                {/* {props.gallery.map(gallery => {
                     return gallery.tripName.map(tripName => (
                     <p>{tripName}</p>
-                ))})}
-                
-                {props.gallery.map(gallery => {
+                ))})} */}
+                {/* {props.gallery.map(gallery => {
                     return gallery.img.map(img => (
                     <img src={img} alt=""/>
-                ))})}
-                {/* {props.gallery.map(gallery => {
-                    console.log(gallery)
+                ))})} */}
+                {/* {props.gallery.img.map(img => {
+                    return (console.log(img))
                 })} */}
-                {/* GREG TODO -  im working on only taking in only one of the objects in gallery then mapping through that object’s array of images.*/}
-                {props.gallery.img.map(img => {
-                    return <img src={img} alt=""/>
+
+
+
+                {props.gallery.map(gallery => {
+                    console.log(gallery[0])
                 })}
-                {/* END GREG TODO */}
+
+                {/* GREG TODO - I'm still not sure how im supposed to get to the second an array within an array */}
+                {props.hunts2.map(hunts2 => {
+                    return hunts2.animals.map(animals =>(
+                        console.log(animals)
+                    ))
+                })}
+                {/*END Greg TODO  */}
+
+
             </div>
     )
 }
 
 export default Gallery; 
+
+// {outerArray.map(outerElement => {
+//     return outerElement.innerArray.map(innerElement => (
+//       <li>{innerElement} - {outerElement.id}</li>
+//     ))
+//   })}

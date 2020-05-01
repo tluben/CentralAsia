@@ -71,6 +71,26 @@ state = {
       img: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fsasscer.files.wordpress.com%2F2014%2F05%2Fargali_sheep.jpg&f=1&nofb=1"
     }
   ],  
+  hunts2: [
+    {
+      id:1,
+      location:"CO",
+      animals:["Deer","Elk","Trout"],
+      duration:"2 weeks"
+    },
+    {
+      id:2,
+      location:"WY",
+      animal:"Elk",
+      duration:"2 weeks"
+    },
+    {
+      id:3,
+      location:"UT",
+      animal:"Wild Pigs",
+      duration:"2 weeks"
+    }
+  ],
   animals: ["ibex","stag","deer"],
 
   projects: projects,
@@ -153,6 +173,7 @@ firstStateUpdateForTeddy = () => {
           <Route path="/gallery" component={() =><Gallery
             gallery={this.state.gallery}
             Hunts={this.state.Hunts}
+            hunts2={this.state.hunts2}
           />}/>
           <Route path="/contact" component={Contact} />
           <Route path="/hunttype" component={() =><HuntPage
